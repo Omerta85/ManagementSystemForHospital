@@ -1,7 +1,157 @@
-.container{
+.container {
   height: 100vh;
   width: 100vw;
   background-image: url("../../../assets/doctor-gec32c20c3_1920.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header{
+  margin: 50px;
+
+}
+
+.medical{
+  background-color: #1344ff;
+  padding:5px;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+
+}
+.healthcare{
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.doctor{
+  border: 1px solid #333;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.login{
+  background-color: #1344ff;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  cursor:pointer;
+  margin: 20px;
+  width: 200px;
+}
+.body{
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+.body h2{
+  width:400px;
+  font-size: 35px;
+  font-weight: bold;
+  font-style: italic;
+  color:#333;
+}
+.body h1{
+  font-size: 40px;
+  color:green;
+  font-weight: bold;
+}
+.logo{
+  background-color: #1344ff;
+  padding: 50px;
+  color:white;
+  font-size: 30px;
+  border-radius: 5px;
+}
+
+.aboutUs{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+.aboutUs h1{
+  color: #1344ff;
+  font-size: 45px;
+  font-weight: 900;
+  font-style: italic;
+}
+.aboutUs img{
+  object-fit: contain;
+  height: 300px;
+  width: 300px;
+
+}
+.aboutUs span{
+  width: 300px;
+  background-color: #1344ff;
+  color: white;
+  border-radius: 10px;
+  padding:30px;
+}
+
+.team{
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+.team-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #333333;
+}
+.team-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.team-item{
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-item img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.team-item span{
+  width: 400px;
+  margin: 20px;
+}
+.footer{
+  height: 50vh;
+  background-color: gray;
+  width: 100%;
+}
+.footer-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.footer-item h1{
+  margin: 150px;
+  width: 200px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333;
+
+}
+.footer-item span{
+  font-weight: 900;
+  color: #333333;
 }
