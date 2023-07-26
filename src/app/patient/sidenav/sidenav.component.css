@@ -1,0 +1,69 @@
+.profile{
+  height: 90vh;
+  width: 250px;
+  background-color: #ffffff;
+  margin: 20px;
+  box-shadow: 10px 10px 5px #aaa;
+}
+
+.profile-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px;
+}
+.name{
+  color:green;
+  font-weight: 900;
+  font-size: 18px;
+
+  animation: inProgress 1s ease alternate infinite;
+}
+
+@keyframes inProgress {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.status, .feature{
+  font-size: 18px;
+  font-weight: 900;
+  margin: 10px;
+}
+.profile button{
+  background-color: #22619d;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+.profile button:last-child{
+  background-color: red;
+  cursor: pointer;
+}
+.icon{
+  margin-right: 10px;
+  cursor: pointer;
+
+}
+.hamburger-icon{
+  display: flex;
+  font-size: 20px;
+  margin: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}

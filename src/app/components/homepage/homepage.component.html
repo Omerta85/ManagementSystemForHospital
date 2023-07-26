@@ -1,92 +1,105 @@
-<div class="container">
-  <div class="header">
-    <span class="medical">Медичний</span>
-    <span class="healthcare">Медична допомога</span>
-    <span class="doctor">Лікарі</span>
-    <span class="login">Увійти</span>
-  </div>
-  <div class="body">
-    <h2>"Наша лікарня дуже швидко відновить ваше здоров'я."</h2>
-    <h1>1000+ Пацієнтів</h1>
-    <div class="logo">
+<div class="wrapper">
+  <div class="container">
+    <div class="header">
+      <span class="medical">Медичний</span>
+      <span class="healthcare">Медична допомога</span>
+      <span class="doctor">Лікарі</span>
+      <span class="login" (click)="showLogin()">Увійти</span>
+    </div>
+    <div class="body">
+      <h2>"Наша лікарня дуже швидко відновить ваше здоров'я."</h2>
+      <h1>1000+ Пацієнтів</h1>
+      <div class="logo">
       <span>
         Клініка "Орфей-ІФ"
       </span>
+      </div>
     </div>
   </div>
-</div>
-
-<div class="aboutUs">
-  <h1>Про нас</h1>
-  <img src="../../../assets/man-gd440a80d6_1920-removebg-preview.png" alt="" >
-  <span> Але завжди важливо підніматися і повертатися до рутини.
+  <div class="aboutUs">
+    <h1>Про нас</h1>
+    <img src="../../../assets/man-gd440a80d6_1920-removebg-preview.png" alt="" >
+    <span> Але завжди важливо підніматися і повертатися до рутини.
 Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
     щоб допомогти вам почуватися позитивно і заряджено.
   </span>
+  </div>
+  <div class="team">
+    <div class="team-header">
+      <h1>НАША КОМАНДА</h1>
+    </div>
+    <div class="team-container">
+      <div class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2020/06/20/15/30/woman-doctor-5321351_640.jpg" alt="">
+        <span>
+        Але завжди важливо підніматися і повертатися до рутини.
+        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
+        щоб допомогти вам почуватися позитивно і заряджено.
+      </span>
+      </div>
+    </div>
+    <div class="team-container">
+      <div class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2016/02/10/13/03/dentist-1191671_640.jpg" alt="">
+        <span>
+        Але завжди важливо підніматися і повертатися до рутини.
+        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
+        щоб допомогти вам почуватися позитивно і заряджено.
+      </span>
+      </div>
+    </div>
+    <div class="team-container">
+      <div class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/15/13/37/coronavirus-5046629_640.jpg" alt="">
+        <span>
+        Але завжди важливо підніматися і повертатися до рутини.
+        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
+        щоб допомогти вам почуватися позитивно і заряджено.
+      </span>
+      </div>
+    </div>
+    <div class="team-container">
+      <div class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2020/06/13/20/01/surgeon-5295646_640.jpg" alt="">
+        <span>
+        Але завжди важливо підніматися і повертатися до рутини.
+        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
+        щоб допомогти вам почуватися позитивно і заряджено.
+      </span>
+      </div>
+    </div>
+    <div class="team-container">
+      <div class="team-item">
+        <img src="https://cdn.pixabay.com/photo/2020/12/22/01/18/doctor-5851234_640.jpg" alt="">
+        <span>
+        Але завжди важливо підніматися і повертатися до рутини.
+        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
+        щоб допомогти вам почуватися позитивно і заряджено.
+      </span>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="footer-item">
+      <h1>
+        Клініка "Орфей-ІФ"
+      </h1>
+      <span>&copy; 2023 Reserved. All rights reserved. </span>
+    </div>
+  </div>
 </div>
-
-<div class="team">
-  <div class="team-header">
-    <h1>НАША КОМАНДА</h1>
-  </div>
-  <div class="team-container">
-    <div class="team-item">
-      <img src="https://cdn.pixabay.com/photo/2020/06/20/15/30/woman-doctor-5321351_640.jpg" alt="">
-      <span>
-        Але завжди важливо підніматися і повертатися до рутини.
-        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
-        щоб допомогти вам почуватися позитивно і заряджено.
-      </span>
+<div class="login-container" *ngIf="close">
+  <div class="login-item">
+    <div class="cancel-button">
+      <div class="close" (click)="showLogin()">Закрити</div>
     </div>
-  </div>
-  <div class="team-container">
-    <div class="team-item">
-      <img src="https://cdn.pixabay.com/photo/2016/02/10/13/03/dentist-1191671_640.jpg" alt="">
-      <span>
-        Але завжди важливо підніматися і повертатися до рутини.
-        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
-        щоб допомогти вам почуватися позитивно і заряджено.
-      </span>
+    <div class="login-input">
+      <h1>Клініка "Орфей-ІФ"</h1>
+      <input type="text" placeholder="Введіть е-мейл">
+      <input type="password" placeholder="Введіть пароль">
+      <button class="login-btn">Увійти</button>
+      <span>Запросити реєстрацію</span>
     </div>
-  </div>
-  <div class="team-container">
-    <div class="team-item">
-      <img src="https://cdn.pixabay.com/photo/2020/04/15/13/37/coronavirus-5046629_640.jpg" alt="">
-      <span>
-        Але завжди важливо підніматися і повертатися до рутини.
-        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
-        щоб допомогти вам почуватися позитивно і заряджено.
-      </span>
-    </div>
-  </div>
-  <div class="team-container">
-    <div class="team-item">
-      <img src="https://cdn.pixabay.com/photo/2020/06/13/20/01/surgeon-5295646_640.jpg" alt="">
-      <span>
-        Але завжди важливо підніматися і повертатися до рутини.
-        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
-        щоб допомогти вам почуватися позитивно і заряджено.
-      </span>
-    </div>
-  </div>
-  <div class="team-container">
-    <div class="team-item">
-      <img src="https://cdn.pixabay.com/photo/2020/12/22/01/18/doctor-5851234_640.jpg" alt="">
-      <span>
-        Але завжди важливо підніматися і повертатися до рутини.
-        Сьогодні ми мотивуємо вас кількома мотиваційними цитатами для медичних студентів та анекдотами,
-        щоб допомогти вам почуватися позитивно і заряджено.
-      </span>
-    </div>
-  </div>
-
-</div>
-
-<div class="footer">
-  <div class="footer-item">
-    <h1>
-      Клініка "Орфей-ІФ"
-    </h1>
-    <span>&copy; 2023 Reserved. All rights reserved. </span>
   </div>
 </div>
