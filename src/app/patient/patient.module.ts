@@ -7,6 +7,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
 import { AppoitmentComponent } from './appoitment/appoitment.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {ChartModule} from "angular-highcharts";
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
   imports: [
     CommonModule,
     PatientRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ChartModule
   ]
 })
 export class PatientModule { }
