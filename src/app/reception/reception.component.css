@@ -1,0 +1,145 @@
+.container{
+  margin: 30px;
+  background-color: #ebedf9;
+  height: 90px;
+  position: relative;
+}
+.navigation{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #1344ff;
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 900;
+
+}
+.navigation span{
+  margin-right: 60px;
+  margin-left: 20px;
+}
+.icon{
+  font-size: 20px;
+  margin-right: 20px;
+}
+.navigation span:first-child{
+  margin-left: 100px;
+}
+.navigation span:last-child{
+  cursor: pointer;
+  font-weight: 900;
+}
+.patient-header{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1024px;
+  margin: 20px;
+  font-weight: 900;
+}
+.add-patient{
+  display: flex;
+  margin-right: 150px;
+  justify-content: flex-end;
+  font-weight: 900;
+  cursor: pointer;
+}
+.ad-icon{
+  color:orange;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.add-patient span{
+  color: white;
+  background-color: orange;
+  border-radius: 5px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search input{
+  width: 450px;
+  padding: 5px;
+  margin: 10px;
+}
+.patient-body{
+  max-width: 1024px;
+}
+.patient-item{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1024px;
+  margin: 10px;
+  font-size: 16px;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-weight: bold;
+}
+.add-modal{
+  position: absolute;
+  top:0;
+  right: 0;
+  height:100vh;
+  width: 100vw;
+  background-color: rgba(0,0,0,0.1);
+}
+.add-item{
+  position: absolute;
+  height: 100vh;
+  width: 30%;
+  background-color: white;
+  top:0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.add-header{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 900;
+}
+.add-header button{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: 900;
+  margin-left: 100px;
+  cursor: pointer;
+}
+.input-item{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.input-item label{
+  font-weight: 900;
+}
+.input-item input{
+  width: 300px;
+  padding: 5px;
+}
+.submit{
+  width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1344ff;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 20px;
+}

@@ -1,0 +1,102 @@
+<div class="container">
+  <div class="navigation">
+    <span>Пацієнти</span>
+    <span>Лікарі</span>
+    <span><fa-icon [icon]="faUser" class="icon" ></fa-icon>Привіт Джейн Доу</span>
+    <span><fa-icon [icon]="logout" class="icon"></fa-icon>Вийти</span>
+  </div>
+  <div class="patient-header">
+    <span>Ім'я</span>
+    <span>Місто</span>
+    <span>Приймальня</span>
+    <span>Номер прийому</span>
+    <span>Ідентифікаційний номер</span>
+    <span>Статус</span>
+  </div>
+  <div class="add-patient" (click)="showAdd()">
+    <fa-icon [icon]="faAd" class="ad-icon"></fa-icon>
+      <span>Додати Пацієнта</span>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Пошук за номером прийому пацієнта">
+  </div>
+  <div class="patient-body" *ngFor="let item of collection | paginate: { itemsPerPage: 1, currentPage: p }">
+    <div class="patient-item">
+      <span>Джей Доу</span>
+      <span>Калуш</span>
+      <span>MVR003</span>
+      <span>RVS/123</span>
+      <span>3527373</span>
+      <span>Чудово</span>
+    </div>
+    <div class="patient-item">
+      <span>Джей Доу</span>
+      <span>Калуш</span>
+      <span>MVR003</span>
+      <span>RVS/123</span>
+      <span>3527373</span>
+      <span>Чудово</span>
+    </div>
+    <div class="patient-item">
+      <span>Джей Доу</span>
+      <span>Калуш</span>
+      <span>MVR003</span>
+      <span>RVS/123</span>
+      <span>3527373</span>
+      <span>Чудово</span>
+    </div>
+    <div class="patient-item">
+      <span>Джей Доу</span>
+      <span>Калуш</span>
+      <span>MVR003</span>
+      <span>RVS/123</span>
+      <span>3527373</span>
+      <span>Чудово</span>
+    </div>
+    <div class="patient-item">
+      <span>Джей Доу</span>
+      <span>Калуш</span>
+      <span>MVR003</span>
+      <span>RVS/123</span>
+      <span>3527373</span>
+      <span>Чудово</span>
+    </div>
+    <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+  </div>
+
+</div>
+
+<div class="add-modal" *ngIf="close">
+  <div class="add-item">
+    <div class="add-header">
+      <span>Добавити пацієнта</span>
+      <button class="close" (click)="showAdd()">Закрити</button>
+    </div>
+    <div class="input-item">
+      <label for="">Ім'я</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Е-мейл</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Адреса проживання</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Номер квартири</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Номер Прийому</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Ідентифікаційний номер</label>
+      <input type="text">
+    </div>
+    <button class="submit">Добавити</button>
+  </div>
+</div>
