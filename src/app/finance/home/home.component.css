@@ -1,0 +1,37 @@
+.container{
+  margin: 50px;
+}
+.treatment-header{
+  background-color: #ebedf9;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 900;
+}
+.treatment-item{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.search{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.search input{
+  padding: 5px;
+  width: 50%;
+  margin: 20px;
+  border-radius: 5px;
+}

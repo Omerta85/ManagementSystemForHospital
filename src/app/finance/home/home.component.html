@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="treatment-header">
+      <span>Лікування</span>
+      <span>Препарат</span>
+      <span>Лікар</span>
+      <span>Рахунок</span>
+      <span>Дата</span>
+      <span>Сплачено</span>
+  </div>
+  <div class="search">
+    <input type="text" placeholder="Пошук рахунку по даті">
+  </div>
+  <div class="treatment-body" *ngFor="let item of collection | paginate: { itemsPerPage: 3, currentPage: p }">
+    <div class="treatment-item">
+      <span>Терапія</span>
+      <span>Бруфен</span>
+      <span>Лікар Джеймс</span>
+      <span>200грн.</span>
+      <span>2023-01-01</span>
+      <span>Сплачено</span>
+    </div>
+    <div class="treatment-item">
+      <span>Терапія</span>
+      <span>Бруфен</span>
+      <span>Лікар Джеймс</span>
+      <span>200грн.</span>
+      <span>2023-01-01</span>
+      <span>Сплачено</span>
+    </div>
+    <div class="treatment-item">
+      <span>Терапія</span>
+      <span>Бруфен</span>
+      <span>Лікар Джеймс</span>
+      <span>200грн.</span>
+      <span>2023-01-01</span>
+      <span>Сплачено</span>
+    </div>
+    <div class="treatment-item">
+      <span>Терапія</span>
+      <span>Бруфен</span>
+      <span>Лікар Джеймс</span>
+      <span>200грн.</span>
+      <span>2023-01-01</span>
+      <span>Сплачено</span>
+    </div>
+    <div class="treatment-item">
+      <span>Терапія</span>
+      <span>Бруфен</span>
+      <span>Лікар Джеймс</span>
+      <span>200грн.</span>
+      <span>2023-01-01</span>
+      <span>Сплачено</span>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+</div>
