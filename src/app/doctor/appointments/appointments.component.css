@@ -1,0 +1,23 @@
+.container{
+  margin: 30px;
+}
+.appointment-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 900;
+}
+.appointment-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+  margin: 10px;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-weight: bold;
+}

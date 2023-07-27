@@ -18,6 +18,9 @@ import {NgxPaginationModule} from "ngx-pagination";
     HomeComponent,
     AppointmentComponent,
   ],
+  exports: [
+    HomeComponent
+  ],
   imports: [
     CommonModule,
     PatientRoutingModule,

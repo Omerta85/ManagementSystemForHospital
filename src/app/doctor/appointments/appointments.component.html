@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="appointment-header">
+    <span>Ім'я пацієнта</span>
+    <span>Е-мейл пацієнта</span>
+    <span>Дата</span>
+  </div>
+  <div class="appointment-body" *ngFor="let item of collection | paginate: { itemsPerPage: 1, currentPage: p }">
+    <div class="appointment-item">
+      <span>Джейн Доу</span>
+      <span>janed@gmail.com</span>
+      <span>2023/1/1</span>
+    </div>
+    <div class="appointment-item">
+      <span>Джейн Доу</span>
+      <span>janed@gmail.com</span>
+      <span>2023/1/1</span>
+    </div>
+    <div class="appointment-item">
+      <span>Джейн Доу</span>
+      <span>janed@gmail.com</span>
+      <span>2023/1/1</span>
+    </div>
+    <div class="appointment-item">
+      <span>Джейн Доу</span>
+      <span>janed@gmail.com</span>
+      <span>2023/1/1</span>
+    </div>
+    <div class="appointment-item">
+      <span>Джейн Доу</span>
+      <span>janed@gmail.com</span>
+      <span>2023/1/1</span>
+    </div>
+    <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+  </div>
+</div>

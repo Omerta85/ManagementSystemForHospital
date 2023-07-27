@@ -1,0 +1,102 @@
+<div class="container">
+  <div class="patient-header">
+    <span>Ім'я</span>
+    <span>Місто</span>
+    <span>Приймальня</span>
+    <span>Номер прийому</span>
+    <span>ID номер</span>
+    <span>Статус</span>
+    <span>Додати діагноз</span>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Пошук пацієнта по номеру прийому">
+  </div>
+
+  <div class="patient-body" *ngFor="let item of collection | paginate: { itemsPerPage: 1, currentPage: p }">
+    <div class="patient-item">
+      <span>Джейн До</span>
+      <span>Івано-Франківськ</span>
+      <span>RFS34</span>
+      <span>MVR/003</span>
+      <span>536363</span>
+      <span>ДОБРЕ</span>
+      <button (click)="showAddTreat()">Додати</button>
+    </div>
+    <div class="patient-item">
+      <span>Джейн До</span>
+      <span>Івано-Франківськ</span>
+      <span>RFS34</span>
+      <span>MVR/003</span>
+      <span>536363</span>
+      <span>ДОБРЕ</span>
+      <button (click)="showAddTreat()">Додати</button>
+    </div>
+    <div class="patient-item">
+      <span>Джейн До</span>
+      <span>Івано-Франківськ</span>
+      <span>RFS34</span>
+      <span>MVR/003</span>
+      <span>536363</span>
+      <span>ДОБРЕ</span>
+      <button (click)="showAddTreat()">Додати</button>
+    </div>
+    <div class="patient-item">
+      <span>Джейн До</span>
+      <span>Івано-Франківськ</span>
+      <span>RFS34</span>
+      <span>MVR/003</span>
+      <span>536363</span>
+      <span>ДОБРЕ</span>
+      <button (click)="showAddTreat()">Додати</button>
+    </div>
+    <div class="patient-item">
+      <span>Джейн До</span>
+      <span>Івано-Франківськ</span>
+      <span>RFS34</span>
+      <span>MVR/003</span>
+      <span>536363</span>
+      <span>ДОБРЕ</span>
+      <button (click)="showAddTreat()">Додати</button>
+    </div>
+    <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+  </div>
+</div>
+
+<div class="add-treatment" *ngIf="close">
+  <div class="add-item">
+    <div class="close">
+      <h3>Додати лікування</h3>
+      <button (click)="showAddTreat()">Закрити</button>
+    </div>
+    <div class="input-item">
+      <label for="">Назва лікування</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Призначений препарат</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Ім'я лікаря</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Опис лікування</label>
+      <textarea></textarea>
+    </div>
+    <div class="input-item">
+      <label for="">Статус</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Рахунок</label>
+      <input type="text">
+    </div>
+    <div class="input-item">
+      <label for="">Дата</label>
+      <input type="date">
+    </div>
+    <button class="submit">Добавити</button>
+  </div>
+</div>
