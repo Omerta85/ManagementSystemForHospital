@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="appointment-header">
+    <span>Ім'я лікаря</span>
+    <span>Посада</span>
+    <span>Електронна пошта</span>
+    <span>Запис</span>
+  </div>
+  <div class="appointment-body" *ngFor="let item of collection | paginate: { itemsPerPage: 3, currentPage: p }">
+    <div class="appointment-item">
+      <span>Доктор Джеймс</span>
+      <span>Невропатолог</span>
+      <span>jamesdoe@gmail.com</span>
+      <button (click)="showBook()">Запис</button>
+    </div>
+    <div class="appointment-item">
+      <span>Доктор Джеймс</span>
+      <span>Невропатолог</span>
+      <span>jamesdoe@gmail.com</span>
+      <button (click)="showBook()">Запис</button>
+    </div>
+    <div class="appointment-item">
+      <span>Доктор Джеймс</span>
+      <span>Невропатолог</span>
+      <span>jamesdoe@gmail.com</span>
+      <button (click)="showBook()">Запис</button>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+</div>
+
+<div class="book" *ngIf="close">
+    <div class="book-container">
+      <h2 class="book-header">Ви впевнені, що хочете записатися на прийом?</h2>
+      <input type="date" class="data">
+      <div class="book-cancel">
+        <button (click)="showBook()">Закрити</button>
+        <button>Записатися</button>
+      </div>
+
+    </div>
+</div>

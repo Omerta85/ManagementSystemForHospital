@@ -5,9 +5,10 @@ import { PatientRoutingModule } from './patient-routing.module';
 import { PatientComponent } from './patient.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
-import { AppoitmentComponent } from './appoitment/appoitment.component';
+import { AppointmentComponent } from './appointment/appointment.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {ChartModule} from "angular-highcharts";
+import {NgxPaginationModule} from "ngx-pagination";
 
 
 @NgModule({
@@ -15,13 +16,14 @@ import {ChartModule} from "angular-highcharts";
     PatientComponent,
     SidenavComponent,
     HomeComponent,
-    AppoitmentComponent,
+    AppointmentComponent,
   ],
   imports: [
     CommonModule,
     PatientRoutingModule,
     FontAwesomeModule,
-    ChartModule
+    ChartModule,
+    NgxPaginationModule
   ]
 })
 export class PatientModule { }

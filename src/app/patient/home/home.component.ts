@@ -12,6 +12,8 @@ export class HomeComponent  implements OnInit{
   ngOnInit() {
 
   }
+  p: number = 1;
+  collection: any[] = [1];
   donutCharts = new Chart({
     chart: {
       type: 'pie',
@@ -37,7 +39,7 @@ export class HomeComponent  implements OnInit{
     title: {
       verticalAlign: 'middle',
       floating: true,
-      text: 'Lab test',
+      text: 'Анамнез',
     },
 
     legend: {
@@ -48,13 +50,13 @@ export class HomeComponent  implements OnInit{
       {
         type: 'pie',
         data: [
-          { name: 'Sneezing', y: 1, color: '#eeeeee' },
+          { name: 'Чхання', y: 1, color: '#eeeeee' },
 
-          { name: 'Coughing', y: 2, color: '#393e46' },
+          { name: 'Кашель', y: 2, color: '#393e46' },
 
-          { name: 'Vomiting', y: 3, color: '#00adb5' },
-          { name: 'Diaphorrea', y: 4, color: '#eeeeee' },
-          { name: 'Mental Issues', y: 5, color: '#506ef9' },
+          { name: 'Блювання', y: 3, color: '#00adb5' },
+          { name: 'Діарея', y: 4, color: '#eeeeee' },
+          { name: 'Проблеми з психічним здоров\'ям', y: 5, color: '#506ef9' },
         ],
       },
     ],
@@ -65,14 +67,14 @@ export class HomeComponent  implements OnInit{
       type: 'line'
     },
     title: {
-      text: 'Patient Health Status'
+      text: 'Стан здоров\'я пацієнта'
     },
     credits: {
       enabled: false
     },
     series: [
       {
-        name: 'Patient Health',
+        name: 'Здоров\'я пацієнта',
         data: [10, 2, 3,6,9,17,20,10,5,2,16]
       } as any
     ]

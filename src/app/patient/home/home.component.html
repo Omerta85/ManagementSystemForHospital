@@ -7,4 +7,39 @@
 
     </div>
   </div>
+  <div class="treatment-header">
+    <span>Назва лікування</span>
+    <span>Призначення</span>
+    <span>Лікар</span>
+    <span>Рахунок</span>
+    <span>Дата</span>
+    <span>Сплачено</span>
+  </div>
+  <div class="treatment-body" *ngFor="let item of collection | paginate: { itemsPerPage: 3, currentPage: p }">
+    <div class="treatment-item">
+      <span>Призначення бруфену</span>
+      <span>Бруфен</span>
+      <span>Dr Doe</span>
+      <span>200 грн.</span>
+      <span>2023-12-01</span>
+      <button>Сплатити</button>
+    </div>
+    <div class="treatment-item">
+      <span>Призначення бруфену</span>
+      <span>Бруфен</span>
+      <span>Dr Doe</span>
+      <span>200 грн.</span>
+      <span>2023-12-01</span>
+      <button>Сплатити</button>
+    </div>
+    <div class="treatment-item">
+      <span>Призначення бруфену</span>
+      <span>Бруфен</span>
+      <span>Dr Doe</span>
+      <span>200 грн.</span>
+      <span>2023-12-01</span>
+      <button>Сплатити</button>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
 </div>

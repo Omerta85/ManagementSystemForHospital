@@ -8,8 +8,8 @@
       <span class="name">Ім'я: Леся Українка </span>
       <span class="status">Статус: Прекрасно</span>
       <span class="feature">Майбутнє</span>
-      <button class="home"> <fa-icon [icon]="faHome" class="icon"></fa-icon>Домашня сторінка</button>
-      <button class="appointment">  <fa-icon [icon]="user" class="icon"></fa-icon>Записатися на прийом</button>
+      <button class="home" routerLink="/patient"> <fa-icon [icon]="faHome" class="icon"></fa-icon>Домашня сторінка</button>
+      <button class="appointment" routerLink="/patient/appointment">  <fa-icon [icon]="user" class="icon"></fa-icon>Записатися на прийом</button>
       <button class="drugs"><fa-icon [icon]="hospital" class="icon"></fa-icon>Купити ліки</button>
       <button class="logout"><fa-icon [icon]="logout" class="icon"></fa-icon>Вийти</button>
     </div>

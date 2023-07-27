@@ -4,13 +4,38 @@
   justify-content: space-evenly;
   margin: 20px;
 }
-.pie{
+.pie, .line{
   height: 300px;
   width: 400px;
   box-shadow: 10px 10px 5px #aaa;
+  font-size: 20px;
+  font-weight: 900;
 }
-.line{
-  height: 300px;
-  width: 400px;
-  box-shadow: 10px 10px 5px #aaa;
+
+.treatment-header{
+  background-color: #ebedf9;
+  margin: 20px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.treatment-header span{
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.treatment-item{
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 900;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
 }
