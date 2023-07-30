@@ -1,5 +1,6 @@
 .container{
   margin: 30px;
+  position: relative;
 }
 .users-header{
   background-color: #203354;
@@ -24,3 +25,79 @@
   border-radius: 5px;
   font-weight: 500;
 }
+.user-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.user-body button{
+  padding: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-weight: bold;
+}
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.3);
+}
+.delete-item{
+  background-color: white;
+  height: 100vh;
+  width: 15%;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.confirm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50%;
+}
+.confirm h4{
+  color: #222;
+  padding: 20px;
+  font-size: 25px;
+}
+.buttons{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.close{
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 900;
+}
+.delete-btn{
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 900;
+  background-color: red;
+  color: white;
+  margin: 20px;
+}
+

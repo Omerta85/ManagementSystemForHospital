@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })
-export class UsersComponent {
-
+export class UsersComponent implements OnInit{
+  constructor() {
+  }
+  p: number = 1;
+  collection: any[] = [1,2];
+  close=false;
+  ngOnInit() {
+  }
+  showDelete(){
+    this.close = !this.close;
+  }
 }

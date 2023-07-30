@@ -10,12 +10,51 @@
   <div class="search">
     <input type="text" placeholder="Пошук користувача по ID номеру">
   </div>
-  <div class="user-body">
-    <span>Степан Бандера</span>
-    <span>stepan@gmail.com</span>
-    <span>Лікар</span>
-    <span>RV120000</span>
-    <span>345</span>
-    <button>Видалити</button>
+  <div class="users" *ngFor="let item of collection | paginate: { itemsPerPage: 1, currentPage: p }">
+    <div class="user-body">
+      <span>Степан Бандера</span>
+      <span>stepan@gmail.com</span>
+      <span>Лікар</span>
+      <span>RV120000</span>
+      <span>345</span>
+      <button (click)="showDelete()">Видалити</button>
+    </div>
+    <div class="user-body">
+      <span>Степан Бандера</span>
+      <span>stepan@gmail.com</span>
+      <span>Лікар</span>
+      <span>RV120000</span>
+      <span>345</span>
+      <button (click)="showDelete()">Видалити</button>
+    </div>
+    <div class="user-body">
+      <span>Степан Бандера</span>
+      <span>stepan@gmail.com</span>
+      <span>Лікар</span>
+      <span>RV120000</span>
+      <span>345</span>
+      <button (click)="showDelete()">Видалити</button>
+    </div>
+    <div class="user-body">
+      <span>Степан Бандера</span>
+      <span>stepan@gmail.com</span>
+      <span>Лікар</span>
+      <span>RV120000</span>
+      <span>345</span>
+      <button (click)="showDelete()">Видалити</button>
+    </div>
+    <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
   </div>
+</div>
+
+<div class="delete" *ngIf="close">
+    <div class="delete-item">
+      <div class="confirm">
+        <h4>Ви впевнені що хочете видалити даного пацієнта?</h4>
+         <div class="buttons">
+           <button class="close" (click)="showDelete()">Закрити</button>
+           <button class="delete-btn" (click)="showDelete()"> Видалити</button>
+         </div>
+      </div>
+    </div>
 </div>
